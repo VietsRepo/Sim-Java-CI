@@ -15,6 +15,18 @@
           <release>21</release>
         </configuration>
       </plugin>
+      <!-- Create executable JAR -->
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.4.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>main.Switch</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
